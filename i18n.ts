@@ -1,25 +1,24 @@
-import i18next from 'i18next';
+import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpBackend from 'i18next-http-backend';
 
-i18next
+i18n
   .use(HttpBackend)
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'de',
-    debug: false,
-    interpolation: {
-      escapeValue: false, // react already safes from xss
-    },
+    fallbackLng: 'de', // Idioma de respaldo
+    debug: false, // Cambia a true para depuración
     detection: {
-      order: ['localStorage', 'navigator'],
+      order: ['localStorage', 'navigator', 'htmlTag', 'path', 'subdomain'],
       caches: ['localStorage'],
     },
-    backend: {
-      loadPath: './locales/{{lng}}/translation.json',
-    }
+    // RUTA CRÍTICA para cargar los archivos de traducción desde la carpeta 'public'
+    backend: { loadPath: '/locales/{{lng}}/translation.json' },
+    interpolation: {
+      escapeValue: false, // React ya protege contra XSS
+    },
   });
 
-export default i18next;
+export default i18n;
