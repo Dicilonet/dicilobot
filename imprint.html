@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dicilo Company Directory</title>
+    <title>Impressum - Dicilo.net</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -16,31 +16,13 @@
                     fontFamily: {
                         sans: ['Onest', 'sans-serif'],
                     },
-                    animation: {
-                      'fade-in': 'fadeIn 0.5s ease-in-out',
-                      'pulse-shadow': 'pulseShadow 2.5s infinite',
-                    },
-                    keyframes: {
-                      fadeIn: {
-                        '0%': { opacity: 0, transform: 'translateY(-10px)' },
-                        '100%': { opacity: 1, transform: 'translateY(0)' },
-                      },
-                      pulseShadow: {
-                        '0%, 100%': {
-                          boxShadow: '0 0 0 0 rgba(22, 163, 74, 0.7)'
-                        },
-                        '70%': {
-                          boxShadow: '0 0 0 12px rgba(22, 163, 74, 0)'
-                        }
-                      }
-                    }
                 }
             }
         }
     </script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://unpkg.com/@babel/preset-typescript/standalone.js"></script>
-    <script type="importmap">
+  <script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@18.2.0",
@@ -50,19 +32,13 @@
     "i18next": "https://esm.sh/i18next@23.11.5",
     "react-i18next": "https://esm.sh/react-i18next@14.1.2?external=react",
     "i18next-browser-languagedetector": "https://esm.sh/i18next-browser-languagedetector@8.0.0",
-    "i18next-http-backend": "https://esm.sh/i18next-http-backend@2.5.2",
-    "@google/genai": "https://esm.sh/@google/genai@0.14.0",
-    "vite": "https://esm.sh/vite@^7.0.5",
-    "path": "https://esm.sh/path@^0.12.7",
-    "url": "https://esm.sh/url@^0.11.4"
+    "i18next-http-backend": "https://esm.sh/i18next-http-backend@2.5.2"
   }
 }
 </script>
-  <link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-white">
+  <body class="bg-gray-50">
     <div id="root"></div>
-    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./index.tsx?v=16"></script>
-<script type="module" src="/index.tsx"></script>
-</body>
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./imprint.tsx?v=16"></script>
+  </body>
 </html>

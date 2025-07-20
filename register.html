@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrieren - Dicilo.net</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Onest', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/@babel/preset-typescript/standalone.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@18.2.0",
+          "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+          "react/": "https://esm.sh/react@18.2.0/",
+          "react-dom/": "https://esm.sh/react-dom@18.2.0/",
+          "i18next": "https://esm.sh/i18next@23.11.5",
+          "react-i18next": "https://esm.sh/react-i18next@14.1.2?external=react",
+          "i18next-browser-languagedetector": "https://esm.sh/i18next-browser-languagedetector@8.0.0",
+          "i18next-http-backend": "https://esm.sh/i18next-http-backend@2.5.2"
+        }
+      }
+    </script>
+  </head>
+  <body class="bg-gray-50">
+    <div id="root"></div>
+    <script type="text/babel" data-presets="react,typescript" data-type="module" src="./register.tsx?v=16"></script>
+  </body>
+</html>
