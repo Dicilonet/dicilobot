@@ -1,14 +1,16 @@
-
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Header } from './components/Header';
-import { Hero } from './components/Hero';
-import { Directory } from './components/Directory';
-import { Footer } from './components/Footer';
-import { KeyFeatures } from './components/KeyFeatures';
-import { DiciBot } from './components/DiciBot';
-import { CheckCircleIcon, RocketLaunchIcon, UserGroupIcon } from './components/icons';
-import { CATEGORIES_DATA } from './constants';
+
+// --- RUTAS DE IMPORTACIÓN CORREGIDAS ---
+// Si App.tsx está en la RAÍZ, y los componentes están en src/components/
+import { Header } from './src/components/Header';
+import { Hero } from './src/components/Hero';
+import { Directory } from './src/components/Directory';
+import { Footer } from './src/components/Footer';
+import { KeyFeatures } from './src/components/KeyFeatures';
+import { DiciBot } from './src/components/DiciBot';
+import { CheckCircleIcon, RocketLaunchIcon, UserGroupIcon } from './src/components/icons'; // Importa desde src/components/icons
+import { CATEGORIES_DATA } from './src/constants'; // Asumiendo constants.ts está en src/ (o src/components/constants)
 
 const App: React.FC = () => {
   const { t } = useTranslation();
@@ -29,10 +31,10 @@ const App: React.FC = () => {
     setCategoryFromUrl(''); // Reset category when a new search is performed
     // Slight delay to allow state to update before scrolling
     setTimeout(() => {
-        const directoryElement = document.getElementById('directory');
-        if (directoryElement) {
-            directoryElement.scrollIntoView({ behavior: 'smooth' });
-        }
+      const directoryElement = document.getElementById('directory');
+      if (directoryElement) {
+        directoryElement.scrollIntoView({ behavior: 'smooth' });
+      }
     }, 100);
   };
 
@@ -41,11 +43,11 @@ const App: React.FC = () => {
     const urlParams = new URLSearchParams(window.location.search);
     const categoryKey = urlParams.get('category');
     if (categoryKey) {
-      const isValidCategory = CATEGORIES_DATA.some(c => c.nameKey === categoryKey);
+      // Nota: Si CATEGORIES_DATA no tiene `nameKey`, podrías necesitar `t(c.nameKey)`
+      const isValidCategory = CATEGORIES_DATA.some(c => c.nameKey === categoryKey); 
       if (isValidCategory) {
-        setCategoryFromUrl(categoryKey); // Set state to pass to Directory
+        setCategoryFromUrl(categoryKey); 
         
-        // Use a slight delay to ensure the component has rendered before scrolling
         setTimeout(() => {
           const directoryElement = document.getElementById('directory');
           if (directoryElement) {
@@ -56,9 +58,9 @@ const App: React.FC = () => {
     }
   }, []); 
 
-
   return (
     <div className="bg-white min-h-screen text-gray-800">
+      {/* Las props 'categories' y 'onSelectCategory' son correctas */}
       <Header categories={CATEGORIES_DATA} onSelectCategory={handleSelectCategory} />
       <main>
         <Hero onSearch={handleSearch} />
@@ -104,10 +106,11 @@ const App: React.FC = () => {
                     <p className='font-semibold'>{t('community.cta_join')}</p>
                 </div>
                 <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                    {/* Estos 'a href' deben apuntar a los HTMLs reales si no hay router en App.tsx */}
                     <a href="./register.html" className="bg-white text-emerald-700 font-bold py-3 px-8 rounded-lg shadow-md hover:bg-emerald-50 transition transform hover:scale-105">{t('community.register_company')}</a>
                     <a href="./register.html" className="bg-emerald-800 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-emerald-900 transition transform hover:scale-105">{t('community.register_customer')}</a>
                 </div>
-                 <p className="mt-8 text-lg font-semibold underline hover:text-emerald-200 cursor-pointer">{t('community.register_rep')}</p>
+                <p className="mt-8 text-lg font-semibold underline hover:text-emerald-200 cursor-pointer">{t('community.register_rep')}</p>
             </div>
         </section>
 
