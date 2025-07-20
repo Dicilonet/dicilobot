@@ -1,0 +1,421 @@
+
+{
+  "nav": {
+    "benefits": "Vantagens",
+    "directory": "Diretório",
+    "login": "Entrar",
+    "register": "Registrar",
+    "menu": "Menu",
+    "open_menu": "Abrir menu principal",
+    "close_menu": "Fechar menu",
+    "online_users": "Usuários online: {{count}}",
+    "pricing": "Preços",
+    "categories": "Categorias"
+  },
+  "hero": {
+    "slogan": "Seu Portal de Recomendações - De clientes que conquistam clientes!",
+    "cta_button": "Explorar Diretório"
+  },
+  "key_features": {
+    "title1": "O tamanho da sua empresa não importa!",
+    "desc1": "Na DICILO, estamos empenhados em oferecer a todas as empresas as melhores oportunidades de crescimento para que possam ter sucesso.",
+    "title2": "Não são necessários 20 anos de experiência!",
+    "desc2": "Na DICILO, trabalhamos todos os dias para que você alcance os resultados desejados no menor tempo possível."
+  },
+  "reasons": {
+    "title": "Duas razões para usar o DICILO!",
+    "subtitle": "Experimente o futuro das recomendações! Faça parte do DICILO, a rede que constrói pontes entre empresas e compradores. Aqui, os compradores recomendam os produtos em que acreditam. Juntos, construímos confiança e abrimos novas oportunidades para o seu sucesso.",
+    "for_companies": {
+      "title": "Para empresas",
+      "point1_title": "Visibilidade aumentada:",
+      "point1_desc": "Destaque-se e alcance um público mais amplo através de recomendações e publicidade direcionada.",
+      "point2_title": "Conexões relevantes:",
+      "point2_desc": "Direcione-se especificamente a usuários que procuram ativamente por seus produtos ou serviços.",
+      "point3_title": "Crescimento acelerado:",
+      "point3_desc": "Encurte o processo de aquisição de clientes e entregue resultados rápidos através de recomendações baseadas em confiança."
+    },
+    "for_users": {
+      "title": "Para usuários",
+      "point1_title": "Descoberta de novas opções:",
+      "point1_desc": "Encontre produtos e serviços de alta qualidade recomendados de forma autêntica e acessível.",
+      "point2_title": "Ofertas exclusivas:",
+      "point2_desc": "Permite aos usuários obter melhores preços em produtos e serviços.",
+      "point3_title": "Confiança na escolha:",
+      "point3_desc": "Facilita a tomada de decisões através de recomendações de usuários e cria confiança na compra."
+    }
+  },
+  "community": {
+    "title": "Descubra possibilities ilimitadas com nossa rede de empresários regionais!",
+    "subtitle": "Faça parte de uma comunidade que respira inovação e sucesso. Seja você uma empresa estabelecida ou um cliente curioso, o DICILO abre as portas para um universo cheio de ofertas exclusivas e oportunidades de negócio únicas.",
+    "for_companies_title": "Para empresas:",
+    "for_companies_desc": "Registre sua empresa e entre em um mundo de novos mercados e oportunidades de colaboração. Use nossa plataforma para expandir seu alcance e fortalecer sua marca no cenário econômico regional.",
+    "for_users_title": "Para usuários:",
+    "for_users_desc": "Inscreva-se como usuário e mergulhe no mundo das ofertas especiais e soluções personalizadas. Deixe-se inspirar pela diversidade e qualidade dos produtos e serviços de nossa rede de empresários regionais.",
+    "cta_join": "Agora é o momento de se juntar à mudança e aproveitar os benefícios de uma comunidade empresarial fortemente conectada. Registre-se hoje e faça parte de um movimento que está redefinindo o futuro do empreendedorismo regional.",
+    "register_company": "Registrar empresa",
+    "register_customer": "Inscrever-se como usuário",
+    "register_rep": "Torne-se um representante independente da DICILO!"
+  },
+  "directory": {
+    "title": "Nossas Empresas",
+    "subtitle": "Descubra nossos produtos e serviços! Estamos continuamente aprimorando nosso portal para que nossos usuários possam se beneficiar de melhores experiências de compra e venda em todas as áreas.",
+    "search_label": "Pesquise por empresas ou palavras-chave",
+    "search_placeholder": "Digite aqui...",
+    "country_label": "Filtrar por país",
+    "all_countries": "Todos os países",
+    "category_label": "Filtrar por categoria",
+    "all_categories": "Todas as categorias",
+    "subcategory_label": "Filtrar por subcategoria",
+    "all_subcategories": "Todas as subcategorias",
+    "browse_by_category": "Navegar por categoria",
+    "select_option": "Selecione",
+    "companies_in": "Empresas em",
+    "top_companies": "Principais empresas no Dicilo",
+    "no_companies_found": "Nenhuma empresa encontrada para a seleção atual.",
+    "search_placeholder_simple": "Procurar empresa, serviço ou cidade...",
+    "search_button": "Pesquisar",
+    "register_button": "Registar",
+    "search_results_for": "Resultados da pesquisa para: \"{{query}}\""
+  },
+  "footer": {
+    "about": {
+      "title": "Sobre nós",
+      "desc": "DICILO é uma plataforma que conecta empresas a consumidores, aumenta a visibilidade de produtos de qualidade por meio de recomendações reais e cria experiências de compra confiáveis e satisfatórias."
+    },
+    "links": {
+      "title": "Links Úteis",
+      "imprint": "Expediente",
+      "privacy": "Política de Privacidade",
+      "contact": "Contato"
+    },
+    "join": {
+      "title": "Faça parte do nosso clube",
+      "desc": "Tenha acesso a ofertas exclusivas de produtos locais e internacionais.",
+      "email_placeholder": "Endereço de e-mail",
+      "cta": "Aproveite"
+    },
+    "rights": "Todos os direitos reservados."
+  },
+  "categories": {
+    "consulting": "Consultoria e Coaching",
+    "education": "Educação e Carreira",
+    "finance": "Serviços Financeiros e Previdência",
+    "gastronomy": "Gastronomia e Culinária",
+    "health": "Saúde e Bem-estar",
+    "hospitality": "Hotelaria e Hospitalidade",
+    "realEstate": "Imóveis e Habitação",
+    "food": "Alimentos e Delicatessen",
+    "music": "Música e Eventos",
+    "social": "Social e Engajamento",
+    "sports": "Esportes e Fitness",
+    "travel": "Viagens e Turismo",
+    "technology": "Tecnologia e Inovação",
+    "textiles": "Têxteis e Moda",
+    "pets": "Animais e Suprimentos para animais",
+    "transport": "Transporte e Mobilidade",
+    "environment": "Meio Ambiente e Sustentabilidade",
+    "entertainment": "Entretenimento e Lazer"
+  },
+  "subcategories": {
+    "consulting": { "business": "Consultoria de negócios", "legal": "Assessoria jurídica", "tax": "Assessoria fiscal" },
+    "education": { "languages": "Cursos de idiomas", "tutoring": "Aulas particulares", "training": "Formação continuada" },
+    "finance": { "insurance": "Seguros", "investment": "Consultoria de investimentos", "accounting": "Contabilidade" },
+    "gastronomy": { "restaurants": "Restaurantes", "cafes": "Cafés", "bars": "Bares" },
+    "health": { "doctors": "Médicos", "pharmacies": "Farmácias", "gyms": "Academias", "hearing_systems": "Aparelhos auditivos" },
+    "hospitality": { "hotels": "Hotéis", "vacation": "Aluguel por temporada", "pensions": "Pensões" },
+    "realEstate": { "buy": "Compra", "rent": "Aluguel", "management": "Administração" },
+    "food": { "supermarkets": "Supermercados", "organic": "Lojas de produtos orgânicos", "markets": "Feiras" },
+    "music": { "instruments": "Instrumentos", "lessons": "Aulas", "live": "Música ao vivo" },
+    "social": { "associations": "Associações", "volunteering": "Voluntariado", "counseling": "Centros de aconselhamento" },
+    "sports": { "clubs": "Clubes esportivos", "equipment": "Equipamentos", "events": "Eventos" },
+    "travel": { "agencies": "Agências de viagens", "flights": "Voos", "tours": "Passeios", "travel_club": "Clube de viagens" },
+    "technology": { "it": "Serviços de TI", "software": "Software", "hardware": "Hardware" },
+    "textiles": { "fashion": "Moda", "shoes": "Sapatos", "accessories": "Acessórios" },
+    "pets": { "vets": "Veterinários", "food": "Ração para animais", "boarding": "Hospedagem de animais" },
+    "transport": { "taxi": "Táxi", "logistics": "Logística", "moving": "Mudanças" },
+    "environment": { "recycling": "Reciclagem", "renewable": "Energias renováveis", "conservation": "Conservação da natureza" },
+    "entertainment": { "cinema": "Cinema", "theater": "Teatro", "events": "Eventos" }
+  },
+  "companies": {
+    "horcomfort": { "slogan": "Sistemas auditivos e mais...", "tagline": "Para uma melhor audição e qualidade de vida" },
+    "inviajes": { 
+      "slogan": "Bem-vindo ao Inviajes.net", 
+      "tagline": "Venha e descubra o mundo.",
+      "tours": {
+        "tour1": "Descubra o Triângulo Dourado da Índia. A partir de: 922 €",
+        "tour2": "Descubra o Caminho Jesuíta na Argentina. A partir de: 1.157 €",
+        "tour3": "Descubra a Sierra Nevada; Santa Marta, Colômbia. A partir de: 270 €",
+        "tour4": "Descubra a majestosa cidade inca de Machu Picchu. A partir de: 699 €"
+      },
+      "details": {
+        "about": "A Inviajes é uma plataforma inovadora no setor de turismo e parte da MILENIUM HOLDING & CONSULTING. Com mais de 100.000 agências de viagens em mais de 150 países, a Inviajes oferece ofertas exclusivas de adesão e preços especiais que proporcionam uma vantagem significativa aos membros. Nossa missão é fornecer aos nossos membros acesso às melhores opções e serviços de viagem para tornar suas experiências de viagem inesquecíveis.",
+        "services": "Na Inviajes, somos especializados em oferecer serviços adaptados às diversas necessidades de nossos membros. Oferecemos uma ampla gama de opções de viagem, desde viagens individuais a excursões em grupo, permitindo que nossos membros aproveitem as melhores ofertas do mercado. Nossa plataforma é projetada para facilitar o acesso a descontos exclusivos para membros e ofertas especiais.",
+        "strength1": "Acesso a ofertas globais: A Inviajes oferece a seus membros acesso exclusivo a uma ampla gama de ofertas de viagens em todo o mundo.",
+        "strength2": "Descontos exclusivos para membros: Nossos membros desfrutam de descontos especiais não disponíveis ao público em geral.",
+        "strength3": "Privilégios de adesão: Eventos especiais, acesso antecipado a novas ofertas e participação em sorteios.",
+        "strength4": "Suporte para viagens em grupo: Assistência personalizada no planejamento de viagens em grupo.",
+        "strength5": "Opções de licença flexíveis para empresas: Aproveite nossa extensa rede e recursos.",
+        "strength6": "Suporte e atendimento multilíngue: Suporte contínuo de uma equipe multilíngue."
+      }
+    },
+    "mhc": { "slogan": "Consultoria que ultrapassa fronteiras.", "tagline": "Estratégias globais, sucesso local." },
+    "bruckenstern": { "slogan": "Restaurante e evento de jazz", "tagline": "Onde o bom gosto encontra a boa música." },
+    "indoroutes": { "slogan": "Agência de viagens para a ÁSIA", "tagline": "Descubra as maravilhas da Ásia conosco." },
+    "carlota": { "slogan": "Agência de viagens na Argentina", "tagline": "Sua aventura na Argentina começa aqui." }
+  },
+  "countries": {
+    "germany": "Alemanha",
+    "international": "Internacional",
+    "india": "Índia",
+    "argentina": "Argentina"
+  },
+  "social_media": {
+    "title": "Canais de Mídia Social",
+    "description": "Visite-nos em nossos canais de mídia social no WhatsApp, Telegram, Instagram, Facebook, TikTok, LinkedIn, YouTube, X, Twitch e Pinterest! Participe de nossos grupos de bate-papo gratuitamente e descubra ofertas atraentes de nossas empresas parceiras. Fique conectado, informado e aproveite ofertas exclusivas!"
+  },
+  "pricing_page": {
+    "hero_title": "Nossos Preços",
+    "welcome": {
+      "club_title": "Faça Parte do Nosso Clube",
+      "club_desc": "Junte-se ao nosso clube exclusivo na Dicilo e tenha acesso a ofertas únicas de produtos e serviços locais e internacionais. Faça parte de uma comunidade conectada e desfrute de grandes benefícios. Cadastre-se hoje e faça parte da mudança!",
+      "buyers_title": "Compradores",
+      "buyers_desc": "Descubra um mundo fascinante de produtos e serviços a preços imbatíveis. De gastronomia a moda e tecnologia, a Dicilo tem tudo o que você precisa. Descubra nossas ofertas exclusivas e economize ainda mais com apenas um clique!",
+      "entrepreneurs_title": "Empresários",
+      "entrepreneurs_desc": "Expanda seus negócios com a Dicilo. Registre sua empresa e conecte-se a uma rede global de empresários e clientes. Tenha acesso a novos mercados e oportunidades, cresça com sua empresa hoje!"
+    },
+    "plans_title": "Nossos Planos e Preços",
+    "plans_desc1": "Na DICILO, acreditamos que o sucesso é alcançado por meio de recomendações genuínas e uma comunidade forte. Por isso, desenvolvemos uma plataforma que une empresas e compradores de forma eficiente. Quer você queira vender, comprar ou doar itens não utilizados, a DICILO oferece uma solução econômica e eficaz.",
+    "plans_desc2": "DICILO.net é uma plataforma que conecta empresas e consumidores por meio de uma rede digital de produtos e serviços. Através de recomendações autênticas, oportunidades de marketing direto e suporte técnico, a DICILO ajuda a maximizar o alcance e a visibilidade de seus produtos.",
+    "plans_desc3": "Fazer parte da DICILO.net é uma grande vantagem, pois a plataforma garante alta visibilidade, permite publicidade direta a usuários interessados e promove o crescimento dos negócios por meio de recomendações em uma comunidade global.",
+    "plans_cta": "Escolha agora o plano certo para você e entre em contato conosco! Estamos felizes em responder a todas as suas perguntas e apoiá-lo no uso ideal da DICILO.net.",
+    "converter": {
+      "title": "Conversor de Euro",
+      "amount_placeholder": "Valor em Euro",
+      "button": "Converter",
+      "desc": "Para todos fora da Alemanha que queiram saber a taxa de câmbio do Euro para outra moeda, podem fazê-lo facilmente com este conversor de moeda gratuito.",
+      "please_enter_amount": "Por favor, insira um valor.",
+      "error": "Erro ao obter a taxa de câmbio."
+    },
+    "plans": {
+      "private": {
+        "title": "Cliente Particular",
+        "price": "€0",
+        "period": "/ano",
+        "features": [
+          "Receba newsletter com ofertas atuais.", "Descontos exclusivos.", "Sem restrições de compra.", "Suporte técnico.", "Contacte-nos se desejar adquirir produtos ou serviços especiais", "Assinatura anual."
+        ],
+        "cta": "Contato"
+      },
+      "retailer": {
+        "title": "Varejista",
+        "price": "€2.340",
+        "period": "/ano",
+        "features": [
+          "Receba newsletter com ofertas atuais.", "Registre até 300 produtos ou serviços em no máximo 4 categorias", "2x newsletter de recomendação por mês para (potenciais clientes)", "Ferramentas gráficas online", "Participe de 4 cursos de I.A. gratuitos por ano", "1x por mês estatísticas sobre sua página de destino", "60 posts em mídias sociais por mês (3 canais)", "Formulário de registro geral", "Suporte por e-mail, Seg. – Sex.", "Suporte técnico", "Assistente de I.A. para (chatbot)", "Com pagamento de assinatura anual (5% de desconto)"
+        ],
+        "cta": "Contato"
+      },
+      "wholesaler": {
+        "title": "Atacadista",
+        "price": "€3.900",
+        "period": "/ano",
+        "best_choice": "Melhor Escolha",
+        "features": [
+          "Receba newsletter com ofertas atuais.", "Registre até 600 produtos ou serviços em no máximo 14 categorias", "2x newsletter de recomendação por mês para (Comunidade Geral Dicilo)", "Edição de seus gráficos", "Edição de seus textos", "1x por mês cursos individuais de I.A.", "2x por mês estatísticas sobre sua página de destino", "6x por ano apresentação online sobre seus produtos no canal Dicilo-TV", "120 posts em mídias sociais por mês distribuídos em 6 canais Dicilo", "Formulário de registro individual para seus produtos/serviços", "Suporte por e-mail, Seg. – Sáb.", "Suporte por WhatsApp, Seg. – Sáb.", "Suporte Premium (Individual, sem suporte artificial)", "Assistente de I.A. individual em sua página de destino", "Com assinatura anual (10% de desconto)"
+        ],
+        "cta": "Contato"
+      },
+      "donor": {
+        "title": "Doador",
+        "price": "€60",
+        "period": "/ano",
+        "features": [
+          "Receba newsletter com ofertas atuais.", "Registre até 24 produtos por ano.", "Newsletter de recomendação.", "16 Posts em Mídias Sociais.", "Formulário de registro.", "Suporte por e-mail, Seg. – Sex.", "Assinatura anual."
+        ],
+        "cta": "Contato"
+      }
+    },
+    "testimonials": {
+      "title": "O que nossos clientes dizem",
+      "subtitle": "Não acredite apenas em nós – deixe nossos clientes falarem por si!",
+      "carla": {
+        "quote": "A Dicilo foi a plataforma perfeita para expandir meu negócio. Consegui registrar meus produtos rapidamente e conquistar novos clientes. Graças às ferramentas de marketing e ao suporte técnico, aumentei significativamente minhas vendas.",
+        "name": "Carla M.",
+        "role": "Vendedora de produtos artesanais"
+      },
+      "tomas": {
+        "quote": "Encontrei produtos fantásticos a preços inesperadamente baixos. As ofertas que recebo pelo boletim informativo e pelo Instapost me ajudam a economizar muito e a descubrir novos serviços que são realmente úteis.",
+        "name": "Tomás R.",
+        "role": "Comprador regular"
+      },
+      "lucia": {
+        "quote": "Eu tinha vários itens que não usava mais, e a Dicilo facilitou para que eu os doasse a pessoas que realmente precisavam. A plataforma é fácil de usar e fiquei encantada com a experiência.",
+        "name": "Lucía G.",
+        "role": "Usuária que doou itens"
+      }
+    },
+    "faq": {
+      "title": "Perguntas Frequentes (FAQs):",
+      "q1": {
+        "q": "1. O que é Dicilo.net?",
+        "a": "DICILO é uma plataforma que conecta empresas a consumidores, aumenta a visibilidade de produtos de qualidade por meio de recomendações reais e cria experiências de compra confiáveis e satisfatórias."
+      }
+    },
+    "final_cta": {
+      "title": "Não fique com dúvidas.",
+      "subtitle": "Se não respondemos a todas as suas perguntas, estamos aqui para ajudar! Não hesite em nos contatar a qualquer momento.",
+      "button": "Contate-nos"
+    }
+  },
+  "client_profile": {
+    "status_available": "Disponível",
+    "business_data": "Dados da Empresa",
+    "contact_info": "Informações de Contato",
+    "socials": "Siga-nos",
+    "founded": "Fundada",
+    "employees": "Funcionários",
+    "projects": "Clientes",
+    "support": "Suporte",
+    "not_found": "Empresa não encontrada.",
+    "go_home": "Ir para a página inicial",
+    "countries_active": "Países Ativos",
+    "partners": "Agências Parceiras",
+    "tabs": {
+        "tours": "Passeios",
+        "about": "Sobre nós",
+        "services": "Serviço",
+        "contact": "Contato",
+        "map": "Mapa"
+    },
+    "our_strength": "Nossa força",
+    "visit_website": "Visite nosso site",
+    "show_larger_map": "Ver mapa maior"
+  },
+  "contact": {
+    "phone": "Telefone",
+    "email": "E-mail",
+    "address": "Endereço",
+    "website": "Site"
+  },
+  "register_page": {
+    "title": "Registre sua empresa",
+    "subtitle": "Junte-se à nossa rede crescente e aumente sua visibilidade.",
+    "form_title": "Dados da empresa",
+    "company_name": "Nome da empresa",
+    "company_email": "E-mail da empresa",
+    "country": "País",
+    "category_title": "Selecione sua categoria",
+    "category_subtitle": "Escolha a categoria principal que melhor descreve sua empresa. Isso ajuda os clientes a encontrá-lo mais facilmente.",
+    "cta": "Concluir registro"
+  },
+  "dicibot": {
+    "greeting": "Olá! Eu sou o DiciBot. Como posso te ajudar hoje?",
+    "placeholder": "Pergunte-me sobre a Dicilo...",
+    "error": "Desculpe, ocorreu um erro. Por favor, tente novamente mais tarde."
+  },
+  "imprint_page": {
+    "title": "Expediente",
+    "section1": {
+      "title": "Informações de acordo com § 5 TMG",
+      "line1": "Dicilo é uma marca de;",
+      "line2": "Milenium Holding & Consulting UG – Group.",
+      "line3": "Mühlendamm 84a",
+      "line4": "22087 Hamburgo",
+      "line5": "Representado por:",
+      "line6": "Nilo Escolar"
+    },
+    "section2": {
+      "title": "Contato",
+      "line1": "Telefone: 015678710511",
+      "line2": "E-mail: info@dicilo.net"
+    },
+    "section3": {
+      "title": "ID de IVA",
+      "line1": "Número de identificação para efeitos do imposto sobre o valor acrescentado de acordo com o § 27 a da Lei do Imposto sobre o Valor Acrescentado: DE323288362"
+    },
+    "section4": {
+      "title": "Responsável editorial",
+      "line1": "Nilo Escolar"
+    },
+    "section5": {
+      "title": "Resolução de litígios da UE",
+      "line1_part1": "A Comissão Europeia disponibiliza uma plataforma para a resolução de litígios em linha (ODR): ",
+      "line1_part2": "https://ec.europa.eu/consumers/odr/",
+      "line1_part3": ". O nosso endereço de e-mail pode ser encontrado acima no aviso do site.",
+      "line2": "Não estamos dispostos ou obrigados a participar em processos de resolução de litígios perante uma comissão de arbitragem de consumidores."
+    },
+    "section6": {
+      "title": "Resolução de litígios de consumo/Comissão de arbitragem universal",
+      "line1": "Não estamos dispostos ou obrigados a participar em processos de resolução de litígios perante uma comissão de arbitragem de consumidores."
+    }
+  },
+  "privacy_page": {
+    "title": "Política de Privacidade",
+    "section1": {
+        "title": "1. Proteção de Dados em Resumo",
+        "content": [
+            "<strong>Informações Gerais</strong>",
+            "As notas a seguir fornecem uma visão geral simples do que acontece com seus dados pessoais quando você visita este site. Dados pessoais são quaisquer dados com os quais você pode ser pessoalmente identificado. Informações detalhadas sobre o assunto de proteção de dados podem ser encontradas em nossa política de privacidade listada abaixo deste texto.",
+            "<strong>Coleta de Dados neste Site</strong>",
+            "<strong>Quem é responsável pela coleta de dados neste site?</strong>",
+            "O processamento de dados neste site é realizado pelo operador do site. Seus detalhes de contato podem ser encontrados na seção 'Aviso sobre a parte responsável' desta política de privacidade.",
+            "<strong>Como coletamos seus dados?</strong>",
+            "Seus dados são coletados, por um lado, quando você nos fornece. Isso pode ser, por exemplo, dados que você insere em um formulário de contato. Outros dados são coletados automaticamente ou após o seu consentimento ao visitar o site através de nossos sistemas de TI. Estes são principalmente dados técnicos (por exemplo, navegador de internet, sistema operacional ou hora da visualização da página). A coleta desses dados ocorre automaticamente assim que você entra neste site.",
+            "<strong>Para que usamos seus dados?</strong>",
+            "Parte dos dados é coletada para garantir a provisão sem erros do site. Outros dados podem ser usados para analisar seu comportamento de usuário.",
+            "<strong>Que direitos você tem em relação aos seus dados?</strong>",
+            "Você tem o direito a qualquer momento de receber informações gratuitas sobre a origem, o destinatário e o propósito de seus dados pessoais armazenados. Você também tem o direito de solicitar a correção ou exclusão desses dados. Se você deu seu consentimento para o processamento de dados, pode revogar esse consentimento a qualquer momento para o futuro. Além disso, você tem o direito, sob certas circunstâncias, de solicitar a restrição do processamento de seus dados pessoais. Você também tem o direito de apresentar uma queixa à autoridade supervisora competente. Para isso e outras questões sobre o tema da proteção de dados, você pode entrar em contato conosco a qualquer momento.",
+            "<strong>Ferramentas de Análise e Ferramentas de Terceiros</strong>",
+            "Ao visitar este site, seu comportamento de navegação pode ser avaliado estatisticamente. Isso é feito principalmente com os chamados programas de análise. Informações detalhadas sobre esses programas de análise podem ser encontradas na seguinte política de privacidade."
+        ]
+    },
+    "section2": {
+        "title": "2. Hospedagem",
+        "content": [
+            "Hospedamos o conteúdo do nosso site com o seguinte provedor:",
+            "<strong>Mittwald</strong>",
+            "O provedor é Mittwald CM Service GmbH & Co. KG, Königsberger Straße 4-6, 32339 Espelkamp (doravante Mittwald). Detalhes podem ser encontrados na política de privacidade da Mittwald: https://www.mittwald.de/datenschutz.",
+            "O uso da Mittwald é baseado no Art. 6(1)(f) do GDPR. Temos um interesse legítimo na apresentação mais confiável possível do nosso site. Se um consentimento correspondente foi solicitado, o processamento é realizado exclusivamente com base no Art. 6(1)(a) do GDPR e no § 25(1) da TTDSG, na medida em que o consentimento inclua o armazenamento de cookies ou o acesso a informações no dispositivo final do usuário (por exemplo, impressão digital do dispositivo) no sentido da TTDSG. O consentimento pode ser revogado a qualquer momento.",
+            "<strong>Acordo de Processamento de Dados</strong>",
+            "Concluímos um acordo de processamento de dados (DPA) para o uso do serviço mencionado acima. Este é um contrato exigido por lei de proteção de dados, que garante que ele processe os dados pessoais dos visitantes do nosso site apenas de acordo com nossas instruções e em conformidade com o GDPR."
+        ]
+    },
+    "section3": {
+        "title": "3. Notas Gerais e Informações Obrigatórias",
+        "content": [
+            "<strong>Proteção de Dados</strong>",
+            "Os operadores destas páginas levam a proteção de seus dados pessoais muito a sério. Tratamos seus dados pessoais de forma confidencial e de acordo com os regulamentos legais de proteção de dados e esta política de privacidade. Quando você usa este site, vários dados pessoais são coletados. Dados pessoais são dados com os quais você pode ser pessoalmente identificado. Esta política de privacidade explica quais dados coletamos e para que os usamos. Também explica como e para que finalidade isso acontece. Gostaríamos de salientar que a transmissão de dados pela Internet (por exemplo, ao comunicar por e-mail) pode ter falhas de segurança. Uma proteção completa dos dados contra o acesso por terceiros não é possível.",
+            "<strong>Aviso sobre a parte responsável</strong>",
+            "A parte responsável pelo processamento de dados neste site é:<br>Nilo Escolar<br>Mühlendamm 84a<br>22087 Hamburgo<br>Telefone: 015678710511<br>E-mail: noreplay@dicilo.net",
+            "A parte responsável é a pessoa singular ou coletiva que, sozinha ou em conjunto com outras, decide sobre os fins e os meios de processamento de dados pessoais (por exemplo, nomes, endereços de e-mail, etc.).",
+            "<strong>Período de Armazenamento</strong>",
+            "A menos que um período de armazenamento mais específico tenha sido especificado nesta política de privacidade, seus dados pessoais permanecerão conosco até que a finalidade do processamento de dados deixe de se aplicar. Se você fizer uma solicitação legítima de exclusão ou revogar seu consentimento para o processamento de dados, seus dados serão excluídos, a menos que tenhamos outras razões legalmente permitidas para armazenar seus dados pessoais (por exemplo, períodos de retenção fiscal ou comercial); neste último caso, a exclusão ocorrerá após essas razões deixarem de se aplicar.",
+            "<strong>Revogação do seu Consentimento para o Processamento de Dados</strong>",
+            "Muitas operações de processamento de dados só são possíveis com o seu consentimento expresso. Você pode revogar um consentimento já dado a qualquer momento. A legalidade do processamento de dados realizado até a revogação permanece inalterada pela revogação.",
+            "<strong>Direito de Apresentar uma Queixa à Autoridade Supervisora Competente</strong>",
+            "Em caso de violações do GDPR, os titulares dos dados têm o direito de apresentar uma queixa a uma autoridade supervisora, em particular no Estado-Membro da sua residência habitual, do seu local de trabalho ou do local da alegada infração. O direito de apresentar uma queixa não prejudica qualquer outro recurso administrativo ou judicial.",
+            "<strong>Direito à Portabilidade dos Dados</strong>",
+            "Você tem o direito de ter os dados que processamos automaticamente com base no seu consentimento ou em cumprimento de um contrato entregues a você ou a um terceiro em um formato comum e legível por máquina. Se você solicitar a transferência direta dos dados para outra parte responsável, isso só será feito na medida em que for tecnicamente viável.",
+            "<strong>Criptografia SSL/TLS</strong>",
+            "Por razões de segurança e para proteger a transmissão de conteúdo confidencial, como pedidos ou consultas que você nos envia como operador do site, este site usa criptografia SSL ou TLS. Você pode reconhecer uma conexão criptografada pelo fato de que a linha de endereço do navegador muda de 'http://' para 'https://' e pelo símbolo de cadeado na linha do seu navegador."
+        ]
+    }
+  },
+  "contact_page": {
+    "title": "Contate-Nos",
+    "subtitle": "Tem alguma pergunta ou sugestão? Gostaríamos muito de ouvir de você.",
+    "form": {
+      "title": "Enviar uma Mensagem",
+      "name": "Seu Nome",
+      "email": "Seu Email",
+      "message": "Sua Mensagem",
+      "submit": "Enviar Mensagem"
+    },
+    "info": {
+      "title": "Informações de Contato",
+      "address_title": "Endereço",
+      "email_title": "Email",
+      "phone_title": "Telefone"
+    }
+  }
+}
