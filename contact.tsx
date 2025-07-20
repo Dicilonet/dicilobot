@@ -1,20 +1,41 @@
-
 import React, { Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import { useTranslation, I18nextProvider } from 'react-i18next';
-import i18next from './i18n';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
-import { CATEGORIES_DATA } from './constants';
-import { LoadingSpinnerIcon } from './components/icons';
+// Importa i18next configurado, que ahora está en la raíz o en src/
+import i18next from './i18n'; // CAMBIO CRÍTICO: La ruta correcta a i18n.ts
 
+// --- RUTAS DE IMPORTACIÓN CORREGIDAS PARA COMPONENTES Y DATOS ---
+// Componentes de src/components/
+import { Header } from './src/components/Header'; 
+import { Footer } from './src/components/Footer'; 
+import { LoadingSpinnerIcon } from './src/components/icons'; // Asegúrate de que LoadingSpinnerIcon se exporta desde icons.tsx
+
+// Asumiendo CATEGORIES_DATA está en src/constants.ts
+import { CATEGORIES_DATA } from './src/constants'; 
+
+// Componente FaIcon local (ya lo tenías en tu código)
+const FaIcon: React.FC<{ icon: string, className?: string }> = ({ icon, className }) => (
+    <i className={`${icon} ${className}`}></i>
+);
+
+// Componente de contenido de la página de contacto
 const ContactPageContent: React.FC = () => {
     const { t } = useTranslation();
 
+    // Puedes añadir una función handleSubmit para el formulario
+    const handleSubmit = (event: React.FormEvent) => {
+        event.preventDefault();
+        // Lógica para enviar el formulario, por ejemplo, a una API
+        alert(t('contact_page.form.submit_success_message_placeholder')); // Mensaje de éxito de placeholder
+        // Limpiar formulario, etc.
+    };
+
     return (
-        <div className="bg-white min-h-screen">
-            <Header categories={CATEGORIES_DATA} />
-            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="bg-white min-h-screen flex flex-col"> {/* Añadido flex flex-col para push Footer al fondo */}
+            {/* Header necesita props, asegúrate de pasarlas o hacerlas opcionales */}
+            <Header categories={CATEGORIES_DATA} onSelectCategory={() => {}} /> 
+            
+            <main className="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 flex-grow"> {/* Añadido flex-grow */}
                 <div className="max-w-4xl mx-auto">
                     <div className="text-center mb-12">
                         <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900">{t('contact_page.title')}</h1>
@@ -25,7 +46,7 @@ const ContactPageContent: React.FC = () => {
                         {/* Contact Form */}
                         <div>
                             <h2 className="text-2xl font-bold text-gray-800 mb-4">{t('contact_page.form.title')}</h2>
-                            <form action="#" method="POST" className="space-y-6">
+                            <form onSubmit={handleSubmit} className="space-y-6"> {/* CAMBIO: onSubmit */}
                                 <div>
                                     <label htmlFor="name" className="block text-sm font-medium text-gray-700">{t('contact_page.form.name')}</label>
                                     <input type="text" name="name" id="name" required className="mt-1 block w-full py-2 px-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-emerald-500 focus:border-emerald-500"/>
