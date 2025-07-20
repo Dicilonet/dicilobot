@@ -1,4 +1,3 @@
-
 import React, { Suspense, useState, useEffect } from 'react';
 import ReactDOM from 'react-dom/client';
 import { useTranslation, I18nextProvider, initReactI18next } from 'react-i18next';
@@ -6,11 +5,17 @@ import i18next from 'i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 import HttpBackend from 'i18next-http-backend';
 
-import { TOP_COMPANIES_DATA } from './constants';
-import type { Company, CompanyTour } from './types';
-import { LoadingSpinnerIcon } from './components/icons';
+// --- RUTAS DE IMPORTACIÓN CORREGIDAS ---
+// Importaciones de componentes de src/components/
+import { Header } from './src/components/Header';
+import { Footer } from './src/components/Footer';
+import { LoadingSpinnerIcon, RocketLaunchIcon, CheckCircleIcon, UserGroupIcon } from './src/components/icons'; // Asegúrate de que importas todos los iconos necesarios aquí. Tu código original importaba algunos en App.tsx. Revisa que LoadingSpinnerIcon y CheckCircleIcon se exportan desde icons.tsx.
 
-// Initialize i18next
+// Importaciones de datos/tipos
+import { TOP_COMPANIES_DATA } from './src/constants'; // Asumiendo constants.ts está en src/
+import type { Company, CompanyTour } from './src/types'; // Asumiendo types.ts está en src/
+
+// Inicialización de i18next
 i18next
   .use(HttpBackend)
   .use(LanguageDetector)
@@ -19,9 +24,11 @@ i18next
     fallbackLng: 'de',
     interpolation: { escapeValue: false },
     detection: { order: ['localStorage', 'navigator'], caches: ['localStorage'] },
-    backend: { loadPath: './locales/{{lng}}/translation.json' }
+    // CAMBIO CRÍTICO AQUÍ: Ruta absoluta para el servidor, ya que locales está en public/
+    backend: { loadPath: '/locales/{{lng}}/translation.json' }
   });
 
+// --- Componentes Auxiliares (sin cambios en la lógica interna) ---
 const FaIcon: React.FC<{ icon: string, className?: string }> = ({ icon, className }) => (
     <i className={`${icon} ${className}`}></i>
 );
@@ -56,11 +63,11 @@ const ToursGrid: React.FC<{ tours: CompanyTour[], visitWebsiteUrl?: string }> = 
                 ))}
             </div>
             {visitWebsiteUrl && (
-                 <div className="text-center">
-                    <a href={visitWebsiteUrl} className="inline-block bg-emerald-600 text-white font-bold py-2 px-6 rounded-md hover:bg-emerald-700 transition" target="_blank" rel="noopener noreferrer">
-                        {t('client_profile.visit_website')}
-                    </a>
-                </div>
+                    <div className="text-center">
+                        <a href={visitWebsiteUrl} className="inline-block bg-emerald-600 text-white font-bold py-2 px-6 rounded-md hover:bg-emerald-700 transition" target="_blank" rel="noopener noreferrer">
+                            {t('client_profile.visit_website')}
+                        </a>
+                    </div>
             )}
         </div>
     );
@@ -78,28 +85,16 @@ const ClientProfile: React.FC<{ company: Company }> = ({ company }) => {
         { id: 'map', label: t('client_profile.tabs.map'), available: !!company.details?.mapEmbedUrl },
     ].filter(tab => tab.available);
 
-     useEffect(() => {
+    useEffect(() => {
         if (tabs.length > 0) {
             setActiveTab(tabs[0].id);
         }
-    }, [company.name]);
+    }, [company.name, tabs.length]); // Añadir tabs.length a las dependencias para evitar warnings.
 
 
     return (
         <div className="bg-white min-h-screen">
-            <header className="bg-gray-800 text-white shadow-lg">
-                <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-                    <div className="flex items-center gap-4">
-                        <img src={company.logo} alt={`${company.name} Logo`} className="h-12 w-12 rounded-full border-2 border-emerald-400" />
-                        <div>
-                            <h1 className="text-2xl font-bold">{company.name}</h1>
-                            <p className="text-emerald-300 text-sm">{t(company.taglineKey)}</p>
-                        </div>
-                    </div>
-                    <a href="./" className="text-sm font-semibold hover:text-emerald-300 transition-colors">&larr; {t('client_profile.go_home')}</a>
-                </div>
-            </header>
-
+            <Header categories={[]} onSelectCategory={() => {}} /> {/* Header necesita props 'categories' y 'onSelectCategory' */}
             <main className="container mx-auto px-6 py-12">
                 <div className="grid lg:grid-cols-12 gap-12">
                     {/* Left Column: Tabs */}
@@ -126,10 +121,10 @@ const ClientProfile: React.FC<{ company: Company }> = ({ company }) => {
                                 {activeTab === 'about' && company.details?.aboutKey && <p className="text-gray-700 leading-relaxed" style={{textAlign: 'justify'}}>{t(company.details.aboutKey)}</p>}
                                 {activeTab === 'services' && company.details?.servicesKey && <p className="text-gray-700 leading-relaxed" style={{textAlign: 'justify'}}>{t(company.details.servicesKey)}</p>}
                                 {activeTab === 'map' && company.details?.mapEmbedUrl && (
-                                     <div>
-                                        <iframe width="100%" height="450" src={company.details.mapEmbedUrl} style={{ border: '1px solid black' }} loading="lazy" title={`${company.name} Map`}></iframe>
-                                        <small><a href={company.details.mapEmbedUrl.replace('/embed.html', '/?').replace('&marker=', '#map=19/')} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">{t('client_profile.show_larger_map')}</a></small>
-                                    </div>
+                                        <div>
+                                            <iframe width="100%" height="450" src={company.details.mapEmbedUrl} style={{ border: '1px solid black' }} loading="lazy" title={`${company.name} Map`}></iframe>
+                                            <small><a href={company.details.mapEmbedUrl.replace('/embed.html', '/?').replace('&marker=', '#map=19/')} target="_blank" rel="noopener noreferrer" className="text-emerald-600 hover:underline">{t('client_profile.show_larger_map')}</a></small>
+                                        </div>
                                 )}
                             </div>
                         </div>
@@ -198,25 +193,26 @@ const ClientProfile: React.FC<{ company: Company }> = ({ company }) => {
                     </div>
                 </div>
             </main>
+            <Footer /> {/* Asegúrate de que Footer está importado */}
         </div>
     );
 };
 
 
-const App: React.FC = () => {
+const App: React.FC = () => { // Este App es en realidad ClientPageRoot
     const [company, setCompany] = useState<Company | null | undefined>(undefined);
     const { t } = useTranslation();
 
     useEffect(() => {
         const urlParams = new URLSearchParams(window.location.search);
-        const companyName = urlParams.get('name');
+        const companyName = urlParams.get('name'); // Assuming company name is passed as a URL parameter
         if (companyName) {
             const companyData = TOP_COMPANIES_DATA.find(c => c.name === companyName);
             setCompany(companyData || null);
         } else {
-            setCompany(null);
+            setCompany(null); // No company name in URL
         }
-    }, []);
+    }, [t]); // Added t to dependency array
 
     if (company === undefined) {
         return (
@@ -228,10 +224,10 @@ const App: React.FC = () => {
     
     if (company === null) {
         return (
-             <div className="fixed inset-0 bg-gray-100 flex flex-col justify-center items-center text-center p-4">
+            <div className="fixed inset-0 bg-gray-100 flex flex-col justify-center items-center text-center p-4">
                 <h1 className="text-3xl font-bold text-gray-800">404</h1>
                 <p className="text-lg text-gray-600 mt-2">{t('client_profile.not_found')}</p>
-                 <a href="./" className="mt-6 bg-emerald-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-emerald-700 transition-colors shadow-sm">{t('client_profile.go_home')}</a>
+                <a href="./" className="mt-6 bg-emerald-600 text-white font-semibold py-2 px-5 rounded-lg hover:bg-emerald-700 transition-colors shadow-sm">{t('client_profile.go_home')}</a>
             </div>
         )
     }
