@@ -66,7 +66,7 @@ const ToursGrid: React.FC<{ tours: CompanyTour[], visitWebsiteUrl?: string }> = 
     );
 };
 
-const ClientProfile: React.FC<{ company: Company }> = ({ company }) => {
+export const ClientProfile: React.FC<{ company: Company }> = ({ company }) => {
     const { t } = useTranslation();
     const [activeTab, setActiveTab] = useState('tours');
     const website = company.contact.find(c => c.type === 'website')?.value;
