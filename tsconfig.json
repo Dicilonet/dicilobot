@@ -21,7 +21,9 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
     "paths": {
-      "@/*" :  ["./*"] // Asegúrate de que esto está aquí para los alias
+      "@/*" :  ["./*"]
     }
-  }
+  },
+  "include": ["./*.ts", "./*.tsx", "src/**/*.ts", "src/**/*.tsx"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
